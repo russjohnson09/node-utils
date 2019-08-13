@@ -14,8 +14,8 @@ echo "install required node modules"
 
 npm install
 
-echo "compile"
-tsc
+#echo "compile"
+#tsc
 
 echo "running main mocha tests with coverage"
 npm test
