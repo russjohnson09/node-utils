@@ -1,6 +1,6 @@
 {
   "name": "@russjohnson09/node-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some helper functions for common tasks.",
   "main": "index.js",
   "directories": {
