@@ -1,0 +1,34 @@
+addons:
+  firefox: "latest"
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-4.8
+      - g++-4.8
+      #- oracle-java8-set-default
+language: node_js
+#before_install:
+#- sudo apt-get install frotz -y
+node_js:
+  - 10
+#before_script:
+#  - npm install -g pm2 typescript mocha
+#  - sleep 3
+env:
+  - X_TEST_ENV=1
+services:
+  - mongodb
+script:
+  - pwd
+  - ls
+  - ./app/devops/testing/run_travis_tests.sh
+cache:
+  directories:
+    - node_modules
+notifications:
+  email:
+    recipients:
+      - russjohnson09@gmail.com
+    on_success: always # default: change, never
+    on_failure: always # default: always

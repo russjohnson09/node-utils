@@ -1,5 +1,18 @@
 const expect = require(`chai`).expect;
 
+const {hello} = require(`./../index`);
+
+
+
+describe(`test hello`, function() {
+
+    it(`hello`, function(done) {
+
+        hello();
+        done();
+    })
+
+});
 
 describe(`test command helper`, function() {
 
