@@ -22,7 +22,7 @@ services:
 script:
   - pwd
   - ls
-  - ./app/devops/testing/run_travis_tests.sh
+  - ./test/run_travis_tests.sh
 cache:
   directories:
     - node_modules
