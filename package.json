@@ -21,6 +21,6 @@
   "homepage": "https://github.com/russjohnson09/node-utils#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   }
 }
